@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyShopifyApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
+    <%= javascript_include_tag "my_script" %>
+  </head>
+
+  <body>
+    <div id = "container">
+      <div id = "header">
+      </div>
+
+      <div id = "content">
+        <%= yield -%>
+      </div>
+
+      <div id = "sidebar"></div>
+         
+      </div>
+      <style type="text/css">
+        .jumbortan{
+          margin-right: 25px;
+          margin-left: 25px;
+          width: 80%;
+        }
+      </style>
+  </body>
+</html>

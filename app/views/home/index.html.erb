@@ -1,0 +1,19 @@
+<% content_for :javascript do %>
+  <script type="text/javascript">
+    ShopifyApp.ready(function(){
+      ShopifyApp.Bar.initialize({
+        title: "Home",
+        icon: "<%= asset_path('favicon.ico') %>"
+      });
+    });
+  </script>
+<% end %>
+
+<nav class="">
+  <ul class="nav nav-tabs">
+  	<% @tabs.each do |tab|%>
+    	<%#debugger%>
+        <%= menu_builder(tab.id).html_safe %>
+    <% end %>
+  </ul>
+</nav>

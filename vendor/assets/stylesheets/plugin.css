@@ -1,0 +1,34 @@
+input[type=checkbox],
+input[type=radio] {
+  float: left;
+  margin-top: 2px;
+  margin-right: 8px;
+}
+
+.float-right {
+  overflow: hidden;
+  float: right;
+}
+
+.radio-row label {
+  float: left;
+}
+.radio-row label + input[type=radio],
+.radio-row label + input[type=checkbox] {
+  margin-left: 16px;
+}
+
+.easy-disabled {
+  position: relative;
+}
+.easy-disabled:after {
+  content: '';
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.5);
+  cursor: wait !important;
+}

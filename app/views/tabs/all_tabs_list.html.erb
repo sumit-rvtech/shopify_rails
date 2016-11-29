@@ -1,0 +1,8 @@
+<nav class="">
+    <ul class="nav nav-tabs">
+    	<% @tabs.each do |tab|%>
+	    	<%debugger%>
+	        <%= menu_builder(tab.id).html_safe %>
+	    <% end %>
+    </ul>
+</nav>
